@@ -1,0 +1,17 @@
+.container {
+    /* max-width: 1100px; */
+    /* margin: 0 auto; */
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    background-color: black;
+  }
+
+  p{
+    color: aliceblue;
+    align-items: center;
+  }
+  
+  
