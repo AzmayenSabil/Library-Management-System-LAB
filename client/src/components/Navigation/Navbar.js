@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom'
 // import { ReactComponent as Brand } from '../../assets/icons/logo.svg'
 import './Navbar.css'
 
-import Search from '../../components/Search/Search.js'
+// import Search from '../../components/Search/Search.js'
 
 const Navbar = () => {
   return (
@@ -30,7 +30,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <Search></Search>
+        {/* <Search></Search> */}
       </div>
     </nav>
   )
