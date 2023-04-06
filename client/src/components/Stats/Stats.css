@@ -1,0 +1,75 @@
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .card {
+    width: 300px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .stat-label {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .stat-value {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .author-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .genre-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .list-item {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    font-size: 14px;
+  }
+  
+  .list-item:last-child {
+    margin-right: 0;
+  }
+  
+  .common-author {
+    font-weight: bold;
+    color: #b80000;
+  }
+
+  .stats-card-data{
+    color: #b80000;
+  }
+  

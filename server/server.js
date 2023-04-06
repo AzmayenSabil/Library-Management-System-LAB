@@ -71,6 +71,50 @@ app.get('/books', (req, res) => {
   });
 });
 
+
+// Route to borrow a book
+// app.post('/borrow', (req, res) => {
+//   const bookId = req.body.bookId;
+//   const borrowerId = req.body.borrowerId;
+
+//   // Generate a new ID for the borrowing transaction
+//   const transactionId = generateId();
+
+//   // Update the book status in the database to 'borrowed'
+//   connection.query(
+//     'UPDATE books SET status = ?, borrower_id = ?, borrowed_date = ? WHERE id = ?',
+//     ['borrowed', borrowerId, new Date(), bookId],
+//     (err, results) => {
+//       if (err) throw err;
+//       console.log(`Book ${bookId} has been borrowed by user ${borrowerId}. Transaction ID: ${transactionId}`);
+//       res.send(`Book ${bookId} has been borrowed by user ${borrowerId}. Transaction ID: ${transactionId}`);
+//     }
+//   );
+// });
+
+// Route to return a book
+// app.post('/return', (req, res) => {
+//   const bookId = req.body.bookId;
+
+//   // Update the book status in the database to 'available'
+//   connection.query(
+//     'UPDATE books SET status = ?, borrower_id = NULL, borrowed_date = NULL, returned_date = ? WHERE id = ?',
+//     ['available', new Date(), bookId],
+//     (err, results) => {
+//       if (err) throw err;
+//       console.log(`Book ${bookId} has been returned.`);
+//       res.send(`Book ${bookId} has been returned.`);
+//     }
+//   );
+// });
+
+// Function to generate a new unique ID
+function generateId() {
+  const timestamp = new Date().getTime().toString(16);
+  const random = Math.floor(Math.random() * 10000).toString(16);
+  return `${timestamp}-${random}`;
+}
+
 app.listen(port, () => {
   console.log(`Server listening at http://localhost:${port}`);
 });

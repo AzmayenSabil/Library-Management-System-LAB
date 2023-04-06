@@ -7,7 +7,8 @@
     align-items: center;
     height: 100%;
     background-color: black;
-    
+    /* width: 100px;
+    margin-top: -100px; */
   }
 
   p{
